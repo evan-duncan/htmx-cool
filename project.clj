@@ -10,6 +10,7 @@
                  [cprop "0.1.19"]
                  [expound "0.9.0"]
                  [funcool/struct "1.4.0"]
+                 [hiccup "1.0.5"]
                  [json-html "0.4.7"]
                  [luminus-http-kit "0.1.9"]
                  [luminus-transit "0.1.3"]
