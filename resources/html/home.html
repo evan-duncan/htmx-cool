@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+  <div id="parent-div">
+    Clicked: {{click-count}}
+  </div>
+  <button hx-get="/inc"
+          hx-trigger="click"
+          hx-target="#parent-div"
+          hx-swap="innerHTML">
+    Increment
+  </button>
+  <button hx-get="/dec"
+          hx-trigger="click"
+          hx-target="#parent-div"
+          hx-swap="innerHTML">
+    Decrement
+  </button>
+  <div class="content">
+  {{docs|markdown}}
+  </div>
+{% endblock %}
+y
